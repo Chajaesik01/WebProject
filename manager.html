@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Write Post</title>
+    <link rel="stylesheet" href="css/board.common.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/posts.js"></script>
+</head>
+
+
+<main>
+    <link rel="stylesheet" href="css/manager.css">
+    <div class="boardWrap">
+        <div class="boardTitle">
+            <a href="board.popular.html"><span class="black">관리자 게시판</span><span class="green">
+                    //관리자게시판</span></a>
+            <p>관리자 게시판입니다.</p>
+        </div>
+        <div class="boardContent">
+            <!--서버로 보내기 -->
+            <form name="manager" action=" " id ="manager" method="post">
+                <fieldset>
+                    <legend>신고 목록 : </legend>
+                    <section>
+                        <table>
+                            <tr>
+                                <form method="post" action="#">
+          
+                                <th> </th>
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>신고 유저</th>
+                                <th>당한 유저</th>
+                                <th>신고 사유</th>
+                                <th>신고 위치</th>
+                                <th>날짜</th>
+                            </tr>
+                            <tr>
+                                <th><label><input type="checkbox" name="delete" value="delete1"></label> </th>
+                                <th>1</th>
+                                <th>김밥말아김밥</th>
+                                <th>김아무개</th>
+                                <th>난 억울해</th>
+                                <th>트롤</th>
+                                <th>링크1</th>
+                                <th>2019-12-12</th>
+                            </tr>
+                            <tr>
+                                <th><label><input type="checkbox" name="delete" value="delete2"></label> </th>
+                                <th>2</th>
+                                <th>둘둘말아김밥</th>
+                                <th>김아무개</th>
+                                <th>난 억울해</th>
+                                <th>트롤</th>
+                                <th>링크2</th>
+                                <th>2019-12-34</th>
+                            </tr>
+                            <tr>
+                                <th><label><input type="checkbox" name="delete" value="delete3"></label> </th>
+                                <th>3</th>
+                                <th>김밥맛있어</th>
+                                <th>김아무개</th>
+                                <th>난 억울해</th>
+                                <th>트롤</th>
+                                <th>링크3</th>
+                                <th>2019-12-34</th>
+                            </tr>
+                        </form>
+                        </table>       
+                    </section>
+                </fieldset>
+                    <section>
+                        <div class = "bt_wrap">
+                        <input type ="submit" value="글삭제">
+                        <input type="button" value="뒤로" onclick="history.go(-1)">
+                        </div>
+                   
+                            
+                            <!--<a href="#">수정</a>-->
+                        </div>
+        
+                    </section>
+                    
+                
+            </form>
+
+        </div>
+     </main>
+    </html>

@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    position: absolute;
+    left: 480px;
+    width: calc(100% - 780px);
+    height: calc(100% - 60px);
+    padding: 30px;
+}
+
+.chat_top{
+    padding: 10px 0;
+    background-color: white;
+    border: 1px solid black;
+
+}
+.chat_top .chat {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.chat_top .chat .icon {
+    position: relative;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+.chat_top .chat .icon i {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    font-size: 2.5rem;
+    color: #aaa;
+    transform: translateX(-50%);
+}
+.chat_middle {
+    padding: 40px 0;
+    background-color: #A8C0D6;
+    border: 1px solid black;
+    height: 100%;
+    overflow:auto;
+}
+
+.chat_middle .chat {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.chat_middle .chat .icon {
+    position: relative;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+.chat_middle .chat .icon i {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    font-size: 2.5rem;
+    color: #aaa;
+    transform: translateX(-50%);
+}
+
+.chat_middle .chat .textbox {
+    position: relative;
+    display: inline-block;
+    max-width: calc(100% - 70px);
+    padding: 10px;
+    margin-top: 7px;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.chat_middle .chat .textbox::before {
+    position: absolute;
+    display: block;
+    top: 0;
+    font-size: 1.5rem;
+}
+
+.chat_middle .ch1 .textbox {
+    margin-left: 20px;
+    background-color: #ddd;
+}
+
+.chat_middle .ch1 .textbox::before {
+    left: -15px;
+    content: "◀";
+    color: #ddd;
+}
+
+.chat_middle .ch2 {
+    flex-direction: row-reverse;
+}
+
+.chat_middle .ch2 .textbox {
+    margin-right: 20px;
+    background-color: #F9EB54;
+}
+
+.chat_middle .ch2 .textbox::before {
+    right: -15px;
+    content: "▶";
+    color: #F9EB54;
+}
+
+.chat_under{
+    width: 1080px;
+    height: 45px;
+    border: bisque;
+    border: 1px solid black;
+}
+
+.chat_under .text_board
+{
+   
+}
+.chat_under .text_board input[type=text]{
+    border: 1px solid red; float: left; width: 90%;  height: 45px;padding:10px;
+}
+.chat_under .submit_button{
+    
+}
+.chat_under .submit_button input[type=submit]{
+    border: 1px solid blue; float: right; width: 107px; padding:10px;
+
+}

@@ -1,0 +1,189 @@
+main {
+    position: absolute;
+    left: 480px;
+    width: 1060px;
+    height: 100%;
+    padding: 30px;
+}
+
+aside {
+    position: absolute;
+    left: 1600px;
+}
+
+.boardWrap {
+    position: relative;
+    overflow: auto;
+    width: 1000px;
+    margin: 30px;
+    background-color: rgb(250, 202, 76);
+}
+
+.boardTitle {
+    position: relative;
+    width: 940px;
+    margin: 30px;
+    font-size: 18px;
+    border: color black;
+    border-radius: 1;
+}
+
+.boardTitle>a:hover {
+    text-decoration: underline black 3px;
+}
+
+div.boardTitle p {
+    margin: 20px 0px;
+    font-size: 18px;
+}
+
+div.boardContent {
+    width: 100%;
+    border-top: 3px solid #000;
+    font-weight: bold;
+    font-size: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+
+div.boardContent>div.postNum,
+div.boardContent>div.author,
+div.boardContent>div.date,
+div.boardContent>div.editPost,
+div.boardContent>div.deletePost,
+div.boardContent>.scrapPost,
+div.boardContent>div.title {
+    display: inline-block;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    width: 11%;
+}
+
+div.boardContent>.normal {
+    font-weight: normal;
+}
+
+div.boardContent>.editPost,
+div.boardContent>.deletePost,
+div.boardContent>.scrapPost {
+    text-decoration: none;
+    color: black;
+}
+
+div.boardContent>.editPost:hover,
+div.boardContent>.deletePost:hover,
+div.boardContent>.scrapPost:hover {
+    text-decoration: underline black;
+    cursor: pointer;
+}
+
+div.boardContent>.title.normal {
+    display: inline-block;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    width: 87.5%;
+}
+
+div.postContent {
+    width: 100%;
+    padding: 50px;
+    text-align: left;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+div.commentList {
+    font-size: 24px;
+    padding: 10px;
+    border-bottom: 2px solid #000;
+}
+
+div.commentList>.black,
+div.commentList>.green {
+    font-size: 24px;
+}
+
+div.comments {
+    width: 100%;
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+    font-size: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+
+div.comment>div.commentNum,
+div.comment>div.editComment,
+div.comment>div.deleteComment {
+    display: inline-block;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    width: 5%;
+}
+
+div.comment>div.commentAuthor,
+div.comment>div.commentDate {
+    display: inline-block;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    width: 10%;
+}
+
+div.comment>.editComment,
+div.comment>.deleteComment {
+    text-decoration: none;
+    color: black;
+}
+
+div.comment>.editComment:hover,
+div.comment>.deleteComment:hover {
+    text-decoration: underline black;
+    cursor: pointer;
+}
+
+div.commentContent {
+    width: 100%;
+    padding: 30px 30px;
+    text-align: left;
+}
+
+div.addComment {
+    font-size: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+    border-bottom: 3px solid #000;
+}
+
+div.addComment>form>.writeComment {
+    display: inline-block;
+    border: 0px;
+    background-color: transparent;
+    padding: 10px;
+    margin: 0px;
+    width: 75%;
+    height: 100%;
+}
+
+div.addComment>form>input[type="submit"] {
+    position: absolute;
+    right: 0px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    width: 20%;
+    height: 230px;
+    border: 0px;
+    font-weight: bold;
+    background-color: #c1c1c1;
+    color: #393939;
+    text-decoration: none;
+}
+
+div.addComment>form>input[type="submit"]:hover {
+    text-decoration: underline #393939;
+    cursor: pointer;
+}

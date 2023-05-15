@@ -1,0 +1,189 @@
+main {
+    position: absolute;
+    left: 480px;
+    width: 1060px;
+    height: 100%;
+    padding: 30px;
+}
+
+aside {
+    position: absolute;
+    left: 1600px;
+}
+
+.board_wrap {
+    position: relative;
+    overflow: auto;
+    width: 1000px;
+    margin: 30px;
+    background-color: rgb(250, 202, 76);
+}
+
+.board_title {
+    position: relative;
+    width: 940px;
+    margin: 30px;
+    font-size: 18px;
+    border: color black;
+    border-radius: 1;
+}
+
+.board_title>a:hover {
+    text-decoration: underline black 3px;
+}
+
+div.board_title p {
+    margin: 20px 0px;
+    font-size: 18px;
+}
+
+div.board_content {
+    width: 100%;
+    border-top: 3px solid #000;
+    font-weight: bold;
+    font-size: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+
+div.board_content>div.post_num,
+div.board_content>div.author,
+div.board_content>div.date,
+div.board_content>div.edit_post,
+div.board_content>div.delete_post,
+div.board_content>.scrap_post,
+div.board_content>div.title {
+    display: inline-block;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    width: 11%;
+}
+
+div.board_content>.normal {
+    font-weight: normal;
+}
+
+div.board_content>.edit_post,
+div.board_content>.delete_post,
+div.board_content>.scrap_post {
+    text-decoration: none;
+    color: black;
+}
+
+div.board_content>.edit_post:hover,
+div.board_content>.delete_post:hover,
+div.board_content>.scrap_post:hover {
+    text-decoration: underline black;
+    cursor: pointer;
+}
+
+div.board_content>.title.normal {
+    display: inline-block;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    width: 87.5%;
+}
+
+div.post_content {
+    width: 100%;
+    padding: 50px;
+    text-align: left;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+div.comment_list {
+    font-size: 24px;
+    padding: 10px;
+    border-bottom: 2px solid #000;
+}
+
+div.comment_list>.black,
+div.comment_list>.green {
+    font-size: 24px;
+}
+
+div.comments {
+    width: 100%;
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+    font-size: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+
+div.comment>div.comment_num,
+div.comment>div.edit_comment,
+div.comment>div.delete_comment {
+    display: inline-block;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    width: 5%;
+}
+
+div.comment>div.comment_author,
+div.comment>div.comment_date {
+    display: inline-block;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    width: 10%;
+}
+
+div.comment>.edit_comment,
+div.comment>.delete_comment {
+    text-decoration: none;
+    color: black;
+}
+
+div.comment>.edit_comment:hover,
+div.comment>.delete_comment:hover {
+    text-decoration: underline black;
+    cursor: pointer;
+}
+
+div.comment_content {
+    width: 100%;
+    padding: 30px 30px;
+    text-align: left;
+}
+
+div.add_comment {
+    font-size: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+    border-bottom: 3px solid #000;
+}
+
+div.add_comment>form>.write_comment {
+    display: inline-block;
+    border: 0px;
+    background-color: transparent;
+    padding: 10px;
+    margin: 0px;
+    width: 75%;
+    height: 100%;
+}
+
+div.add_comment>form>input[type="submit"] {
+    position: absolute;
+    right: 0px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    width: 20%;
+    height: 230px;
+    border: 0px;
+    font-weight: bold;
+    background-color: #c1c1c1;
+    color: #393939;
+    text-decoration: none;
+}
+
+div.add_comment>form>input[type="submit"]:hover {
+    text-decoration: underline #393939;
+    cursor: pointer;
+}

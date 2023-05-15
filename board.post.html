@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSE Community - Post Name</title>
+    <link rel="stylesheet" href="css/board.common.css">
+    <link rel="stylesheet" href="css/board.posts.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/posts.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="board.main.html" id="logo" class="none">
+            <img src="images/header_logo.png">
+            <div class="hovering none">CSE Community</div>
+        </a>
+        <div id="info">
+            <hr>
+            <div class="classExpr hovering toggle" href="#"><span class="hotpink">goto</span> cse_info;</div>
+            <div class="toggleMenu">
+                <a href="#">introduce_cse</a>
+                <a href="#">introduce_cse_curriculum</a>
+                <a href="#">introduce_cse_contact_list</a>
+            </div>
+            <hr>
+            <div class="classExpr bold"><span class="blue">class</span> <span class="mint">Person</span> {</div>
+            <div class="classExpr blue">private:</div>
+            <div id="img">
+                <div><span class="mint">Img</span> my_img;</div>
+                <img src="images/unknownUserProfile.png">
+            </div>
+            <div id="structExpr">
+                <div><span class="blue">struct</span> <span class="mint">info</span> {</div>
+                <div class="bold"><span class="blue">string</span> name;</div>
+                <div>Hong Gil Dong</div>
+                <div class="bold"><span class="blue">string</span> belong_to;</div>
+                <div>컴퓨터공학 전공 XX학번</div>
+                <div>};</div>
+            </div>
+            <div class="classExpr blue">public:</div>
+            <a href="#" class="classExpr"><span class="blue">void</span><span class="darkyellow">
+                    administrate</span><span class="white">();</span></a>
+            <a href="#" class="classExpr"><span class="blue">void</span><span class="darkyellow">
+                    edit_my_info</span><span class="white">();</span></a>
+            <a href="#" class="classExpr"><span class="blue">void</span><span class="darkyellow">
+                    log_out</span><span class="white">();</span></a>
+            <a href="#" class="classExpr"><span class="mint">List</span><span class="darkyellow">
+                    my_post</span><span class="white">();</span></a>
+            <a href="#" class="classExpr"><span class="mint">List</span><span class="darkyellow">
+                    my_comment_post</span><span class="white">();</span></a>
+            <a href="#" class="classExpr"><span class="mint">List</span><span class="darkyellow">
+                    my_scrap</span><span class="white">();</span></a>
+            <div class="classExpr">};</div>
+            <hr>
+            <div class="classExpr hovering toggle"><span class="mint">std</span>::vector&lt;<span
+                    class="blue">Board</span>&gt; boards = {</div>
+            <div class="toggleMenu">
+                <a href="#"><span class="skyblue">boards</span>.<span class="darkyellow">push_back</span>(<span
+                        class="hotpink">new</span> <span class="darkyellow">Board</span>());</a>
+                <div class="classExpr"><span class="skyblue">boards</span>.<span class="darkyellow">find</span>(
+                    <form action="#" method="post" name="boardNameForSearch">
+                        <input type="text" maxlength="20">
+                    </form>
+                    );
+                </div>
+            </div>
+            <a href="board.popular.html" class="classExpr">popular_board,</a>
+            <a href="board.notice.html" class="classExpr">notice_board,</a>
+            <a href="board.free.html" class="classExpr">free_board,</a>
+            <a href="board.qna.html" class="classExpr">qna_board,</a>
+            <div class="classExpr">
+                <a href="#">Web Programming</a>
+                <label class="toggleSwitch"><span class="toggleButton"></span></label>
+            </div>
+            <div class="toggleMenu">
+                <a href="#"><span class="skyblue">boards</span>.<span class="darkyellow">erase</span>(<span
+                        class="skyblue">boards</span>.<span class="darkyellow">begin</span>() + <span
+                        class="lightgreen">4</span>);</a>
+            </div>
+            <a href="#" class="classExpr">}</a>
+        </div>
+        <div id="chat">
+            <a href="#"><span class="hotpink">goto</span><span class="white"> chat;</span></a>
+        </div>
+    </header>
+    <main>
+        <div class="boardWrap">
+            <div class="boardTitle">
+                <a href="board.free.html"><span class="black">free_board</span><span class="green">
+                        //자유게시판</span></a>
+                <p>자유롭게 어떤 주제든지 이야기할 수 있는 게시판입니다.</p>
+            </div>
+            <div class="boardContent">
+                <div class="postNum">글 번호</div>
+                <div class="postNum normal">1</div>
+                <div class="author">작성자</div>
+                <div class="author normal">김도훈</div>
+                <div class="date">작성일자</div>
+                <div class="date normal">2022.11.18</div>
+                <div class="editPost">수정</div>
+                <div class="deletePost">삭제</div>
+                <div class="scrapPost">스크랩</div>
+                <br>
+                <div class="title">글 제목</div>
+                <div class="title normal">...</div>
+                <br>
+                <div class="postContent">ㅇㅇ</div>
+            </div>
+            <div class="uploadedFiles">
+
+            </div>
+            <div class="commentList">
+                <span class="black">comment_list</span>
+                <span class="green"> //댓글 목록</span>
+            </div>
+            <div class="comments">
+                <div class="comment">
+                    <div class="commentNum">1</div>
+                    <div class="commentAuthor">김이름</div>
+                    <div class="commentDate">2022.11.18</div>
+                    <div class="editComment">수정</div>
+                    <div class="deleteComment">삭제</div>
+                    <div class="commentContent">ㅇㅇ</div>
+                </div>
+            </div>
+            <div class="comments">
+                <div class="comment">
+                    <div class="commentNum">1</div>
+                    <div class="commentAuthor">김이름</div>
+                    <div class="commentDate">2022.11.18</div>
+                    <div class="editComment">수정</div>
+                    <div class="deleteComment">삭제</div>
+                    <div class="commentContent">ㅇㅇ</div>
+                </div>
+            </div>
+            <div class="comments">
+                <div class="comment">
+                    <div class="commentNum">1</div>
+                    <div class="commentAuthor">김이름</div>
+                    <div class="commentDate">2022.11.18</div>
+                    <div class="editComment">수정</div>
+                    <div class="deleteComment">삭제</div>
+                    <div class="commentContent">ㅇㅇ</div>
+                </div>
+            </div>
+            <div class="addComment">
+                <form method="post" action="#">
+                    <textarea class="writeComment" rows="10" cols="40" placeholder="댓글 정책"></textarea>
+                    <input type="submit" value="댓글 쓰기">
+                </form>
+            </div>
+        </div>
+    </main>
+    <aside>
+        <div id="mvp">
+            <ul id="slider">
+                <li>
+                    <div id="like-most">
+                        <img class="bono" src="images/bonobono.png">
+                        <div class="mvpType">(경)좋아요 상(축)</div>
+                        <a class="mvpInfo" href="#">
+                            <img src="images/unknownUserProfile.png"><br />
+                            김이름<br />
+                            2019112070
+                        </a>
+                        <div class="countType">좋아요 수:</div>
+                        <div class="countValue">1919191919</div>
+                        <img class="amazing" src="images/amazing.png">
+                    </div>
+                </li>
+                <li>
+                    <div id="dislike-most">
+                        <img class="bono" src="images/bonobono.png">
+                        <div class="mvpType">(경)싫어요 상(축)</div>
+                        <a class="mvpInfo" href="#">
+                            <img src="images/unknownUserProfile.png"><br />
+                            김이름<br />
+                            2019112070
+                        </a>
+                        <br>
+                        <div class="countType">싫어요 수:</div>
+                        <div class="countValue">1919191919</div>
+                        <img class="amazing" src="images/amazing.png">
+                    </div>
+                </li>
+                <li>
+                    <div id="post-most">
+                        <img class="bono" src="images/bonobono.png">
+                        <div class="mvpType">(경)게시글 상(축)</div>
+                        <a class="mvpInfo" href="#">
+                            <img src="images/unknownUserProfile.png"><br />
+                            김이름<br />
+                            2019112070
+                        </a>
+                        <div class="countType">게시글 수:</div>
+                        <div class="countValue">1919191919</div>
+                        <img class="amazing" src="images/amazing.png">
+                    </div>
+                </li>
+                <li>
+                    <div id="scrapped-most">
+                        <img class="bono" src="images/bonobono.png">
+                        <div class="mvpType">(경)스크랩 상(축)</div>
+                        <a class="mvpInfo" href="#">
+                            <img src="images/unknownUserProfile.png"><br />
+                            김이름<br />
+                            2019112070
+                        </a>
+                        <div class="countType">스크랩 수:</div>
+                        <div class="countValue">1919191919</div>
+                        <img class="amazing" src="images/amazing.png">
+                    </div>
+                </li>
+                <li>
+                    <div id="comment-most">
+                        <img class="bono" src="images/bonobono.png">
+                        <div class="mvpType">(경)댓글 상(축)</div>
+                        <a class="mvpInfo" href="#">
+                            <img src="images/unknownUserProfile.png"><br />
+                            김이름<br />
+                            2019112070
+                        </a>
+                        <div class="countType">댓글 수:</div>
+                        <div class="countValue">1919191919</div>
+                        <img class="amazing" src="images/amazing.png">
+                    </div>
+                </li>
+            </ul>
+            <div id="pagination-wrap">
+                <ul>
+                </ul>
+            </div>
+        </div>
+        <div id="quickMenu">
+            <a href="#">
+                <img src="images/e-class.png">
+                <span>e-class</span>
+            </a>
+            <a href="#">
+                <img src="images/lib.png">
+                <span>중앙<br />도서관</span>
+            </a>
+            <a href="#">
+                <img src="images/udrims.png">
+                <span>udrims</span>
+            </a>
+            <a href="#">
+                <img src="images/udrimserror.png">
+                <span>udrims<br />에러 조치</span>
+            </a>
+            <a href="#">
+                <img src="images/webmail.png">
+                <span>web mail</span>
+            </a>
+            <a href="#">
+                <img src="images/mdrims.png">
+                <span>mdrims</span>
+            </a>
+        </div>
+    </aside>
+    <footer>
+        <address>
+            <ul>
+                <li><a href="/page/serviceagreement">이용약관</a></li>
+                <li class="privacy"><a href="/page/privacy">개인정보처리방침</a></li>
+                <li><a href="/page/faq">문의하기</a></li>
+                <li class="copyright"><a href="/">© CSE-Only Community</a></li>
+            </ul>
+        </address>
+    </footer>
+</body>
+
+</html>

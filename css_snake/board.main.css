@@ -1,0 +1,146 @@
+main>section>a {
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+main>section>a:hover {
+    text-decoration: underline black;
+}
+
+main>section>ul>li {
+    margin: 5px 0px;
+}
+
+main>section>ul>li>a {
+    font-size: 18px;
+    font-family: 'Consolas';
+    color: black;
+    text-decoration: none;
+}
+
+main>section>ul>li>a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 1300px) {
+    main {
+        height: calc(100% + 110px);
+    }
+
+    main>section {
+        position: absolute;
+        height: 420px;
+        margin: 30px;
+        background-color: rgb(250, 202, 76);
+    }
+
+    main>section>ul {
+        position: absolute;
+        top: 80px;
+        left: 30px;
+        list-style: none;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    main>section#popular_board {
+        top: 30px;
+        left: 30px;
+        width: calc((100% - 150px)/2);
+    }
+
+    main>section#notice_board {
+        top: 30px;
+        left: calc((100% - 150px)/2 + 60px);
+        width: calc((100% - 150px)/2);
+    }
+
+    main>section#free_board {
+        top: 480px;
+        left: 30px;
+        width: calc((100% - 150px)/2);
+    }
+
+    main>section#qna_board {
+        top: 480px;
+        left: calc((100% - 150px)/2 + 60px);
+        width: calc((100% - 150px)/2);
+    }
+}
+
+@media only screen and (max-width: 1799px) and (min-width: 1300px) {
+    main {
+        height: 1890px;
+    }
+
+    main>section#popular_board {
+        top: 30px;
+        left: 30px;
+        width: calc(100% - 120px);
+    }
+
+    main>section#notice_board {
+        top: 480px;
+        left: 30px;
+        width: calc(100% - 120px);
+    }
+
+    main>section#free_board {
+        top: 930px;
+        left: 30px;
+        width: calc(100% - 120px);
+    }
+
+    main>section#qna_board {
+        top: 1380px;
+        left: 30px;
+        width: calc(100% - 120px);
+    }
+}
+
+@media only screen and (max-width: 1299px) {
+    main {
+        height: 1890px;
+        padding: 30px 30px 90px 30px;
+    }
+
+    main>section {
+        position: absolute;
+        width: 460px;
+        height: 420px;
+        margin: 30px;
+        background-color: rgb(250, 202, 76);
+    }
+
+    main>section#popular_board {
+        top: 30px;
+        left: 30px;
+    }
+
+    main>section#notice_board {
+        top: 480px;
+        left: 30px;
+    }
+
+    main>section#free_board {
+        top: 930px;
+        left: 30px;
+    }
+
+    main>section#qna_board {
+        top: 1380px;
+        left: 30px;
+    }
+
+    main>section>ul {
+        position: absolute;
+        top: 80px;
+        left: 30px;
+        width: 460px;
+        list-style: none;
+    }
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Q&A board</title>
+    <link rel="stylesheet" href="css/board.common.css">
+    <link rel="stylesheet" href="css/board.posts.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/posts.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="board.main.html" id="logo" class="none">
+            <img src="images/header_logo.png">
+            <div class="hovering none">CSE Community</div>
+        </a>
+        <div id="info">
+            <hr>
+            <div class="classExpr hovering toggle" href="#"><span class="hotpink">goto</span> cse_info;</div>
+            <div class="toggleMenu">
+                <a href="#">introduce_cse</a>
+                <a href="#">introduce_cse_curriculum</a>
+                <a href="#">introduce_cse_contact_list</a>
+            </div>
+            <hr>
+            <div class="classExpr bold"><span class="blue">class</span> <span class="mint">Person</span> {</div>
+            <div class="classExpr blue">private:</div>
+            <div id="img">
+                <div><span class="mint">Img</span> my_img;</div>
+                <img src="images/unknownUserProfile.png">
+            </div>
+            <div id="structExpr">
+                <div><span class="blue">struct</span> <span class="mint">info</span> {</div>
+                <div class="bold"><span class="blue">string</span> name;</div>
+                <div>Hong Gil Dong</div>
+                <div class="bold"><span class="blue">string</span> belong_to;</div>
+                <div>컴퓨터공학 전공 XX학번</div>
+                <div>};</div>
+            </div>
+            <div class="classExpr blue">public:</div>
+            <a href="#" class="classExpr"><span class="blue">void</span><span class="darkyellow">
+                    administrate</span><span class="white">();</span></a>
+            <a href="#" class="classExpr"><span class="blue">void</span><span class="darkyellow">
+                    edit_my_info</span><span class="white">();</span></a>
+            <a href="#" class="classExpr"><span class="blue">void</span><span class="darkyellow">
+                    log_out</span><span class="white">();</span></a>
+            <a href="#" class="classExpr"><span class="mint">List</span><span class="darkyellow">
+                    my_post</span><span class="white">();</span></a>
+            <a href="#" class="classExpr"><span class="mint">List</span><span class="darkyellow">
+                    my_comment_post</span><span class="white">();</span></a>
+            <a href="#" class="classExpr"><span class="mint">List</span><span class="darkyellow">
+                    my_scrap</span><span class="white">();</span></a>
+            <div class="classExpr">};</div>
+            <hr>
+            <div class="classExpr hovering toggle"><span class="mint">std</span>::vector&lt;<span
+                    class="blue">Board</span>&gt; boards = {</div>
+            <div class="toggleMenu">
+                <a href="#"><span class="skyblue">boards</span>.<span class="darkyellow">push_back</span>(<span
+                        class="hotpink">new</span> <span class="darkyellow">Board</span>());</a>
+                <div class="classExpr"><span class="skyblue">boards</span>.<span class="darkyellow">find</span>(
+                    <form action="#" method="post" name="boardNameForSearch">
+                        <input type="text" maxlength="20">
+                    </form>
+                    );
+                </div>
+            </div>
+            <a href="board.popular.html" class="classExpr">popular_board,</a>
+            <a href="board.notice.html" class="classExpr">notice_board,</a>
+            <a href="board.free.html" class="classExpr">free_board,</a>
+            <a href="board.qna.html" class="classExpr">qna_board,</a>
+            <div class="classExpr">
+                <a href="#">Web Programming</a>
+                <label class="toggleSwitch"><span class="toggleButton"></span></label>
+            </div>
+            <div class="toggleMenu">
+                <a href="#"><span class="skyblue">boards</span>.<span class="darkyellow">erase</span>(<span
+                        class="skyblue">boards</span>.<span class="darkyellow">begin</span>() + <span
+                        class="lightgreen">4</span>);</a>
+            </div>
+            <a href="#" class="classExpr">}</a>
+        </div>
+        <div id="chat">
+            <a href="#"><span class="hotpink">goto</span><span class="white"> chat;</span></a>
+        </div>
+    </header>
+    <main>
+        <div class="boardWrap">
+            <div class="boardTitle">
+                <a href="board.qna.html"><span class="black">qna_board</span><span class="green">
+                        //Q&A게시판</span></a>
+                <p>여러 궁금한 사항을 물어볼 수 있는 곳입니다. 자유롭게 답하는 것 또한 가능합니다.</p>
+            </div>
+            <div class="boardContent">
+                <div class="postList">
+                    <div class="headRow">
+                        <div class="postNum">번호</div>
+                        <div class="title">제목</div>
+                        <div class="author">글쓴이</div>
+                        <div class="date">작성일</div>
+                        <div class="view">조회</div>
+                    </div>
+                    <div class="postRow">
+                        <div class="postNum">1</div>
+                        <a class="title" href="board.post.html">...</a>
+                        <div class="dropDown author">
+                            <div class="nameButton">김도훈</div>
+                            <div class="dropContentBg"></div>
+                            <div class="dropContent" style="display: none;">
+                                <a class="dropDownInfo" href="#">
+                                    <img href="images/unknownUserProfile.png"><br />
+                                    김도훈<br />
+                                    2019112070
+                                </a>
+                                <a href="#">쓴 글</a>
+                                <a class="openReport">
+                                    <div>신고</div>
+                                </a>
+                            </div>
+                            <div class="modalBackground closeReport"></div>
+                            <div class="modalWrap">
+                                <p>Report</p>
+                                <form method="post" action="#">
+                                    <label>음란물/불건전한 만남 및 대화&nbsp;<input type="checkbox" name="reportType"
+                                            value="indecent"></label>
+                                    <label>유출/사칭/사기&nbsp;<input type="checkbox" name="reportType" value="fraud"></label>
+                                    <label>정당/정치인 비하 및 선거운동&nbsp;<input type="checkbox" name="reportType"
+                                            value="political"></label>
+                                    <label>낚시/놀람/도배&nbsp;<input type="checkbox" name="reportType" value="dizzy"></label>
+                                    <label>욕설/비하&nbsp;<input type="checkbox" name="reportType" value="insult"></label>
+                                    <label>게시판 성격에 부적절함&nbsp;<input type="checkbox" name="reportType"
+                                            value="unfitness"></label>
+                                    <label>상업적 광고 및 판매&nbsp;<input type="checkbox" name="reportType"
+                                            value="commercial"></label>
+                                    <input type="text" name="reportDetail" placeholder="기타사유">
+                                </form>
+                                <input class="closeReport" type="submit" value="확인">
+                                <button class="closeReport">닫기</button>
+                            </div>
+                        </div>
+                        <div class="date">2022.11.18</div>
+                        <div class="view">99999999</div>
+                    </div>
+                </div>
+                <div class="searchBar">
+                    <form method="post" action="#">
+                        <input type="text">
+                        <input class="searchButton" type="submit" value="검색">
+                    </form>
+                </div>
+                <div class="pageButton">
+                    <a href="#" class="button first">&lt;&lt;</a>
+                    <a href="#" class="button prev">&lt;</a>
+                    <a href="#" class="num selected">1</a>
+                    <a href="#" class="num">2</a>
+                    <a href="#" class="num">3</a>
+                    <a href="#" class="num">4</a>
+                    <a href="#" class="num">5</a>
+                    <a href="#" class="button next">&gt;</a>
+                    <a href="#" class="button last">&gt;&gt;</a>
+                </div>
+                <div class="buttonWrap">
+                    <a href="board.write.html">글 쓰기</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside>
+        <div id="mvp">
+            <ul id="slider">
+                <li>
+                    <div id="like-most">
+                        <img class="bono" src="images/bonobono.png">
+                        <div class="mvpType">(경)좋아요 상(축)</div>
+                        <a class="mvpInfo" href="#">
+                            <img src="images/unknownUserProfile.png"><br />
+                            김이름<br />
+                            2019112070
+                        </a>
+                        <div class="countType">좋아요 수:</div>
+                        <div class="countValue">1919191919</div>
+                        <img class="amazing" src="images/amazing.png">
+                    </div>
+                </li>
+                <li>
+                    <div id="dislike-most">
+                        <img class="bono" src="images/bonobono.png">
+                        <div class="mvpType">(경)싫어요 상(축)</div>
+                        <a class="mvpInfo" href="#">
+                            <img src="images/unknownUserProfile.png"><br />
+                            김이름<br />
+                            2019112070
+                        </a>
+                        <br>
+                        <div class="countType">싫어요 수:</div>
+                        <div class="countValue">1919191919</div>
+                        <img class="amazing" src="images/amazing.png">
+                    </div>
+                </li>
+                <li>
+                    <div id="post-most">
+                        <img class="bono" src="images/bonobono.png">
+                        <div class="mvpType">(경)게시글 상(축)</div>
+                        <a class="mvpInfo" href="#">
+                            <img src="images/unknownUserProfile.png"><br />
+                            김이름<br />
+                            2019112070
+                        </a>
+                        <div class="countType">게시글 수:</div>
+                        <div class="countValue">1919191919</div>
+                        <img class="amazing" src="images/amazing.png">
+                    </div>
+                </li>
+                <li>
+                    <div id="scrapped-most">
+                        <img class="bono" src="images/bonobono.png">
+                        <div class="mvpType">(경)스크랩 상(축)</div>
+                        <a class="mvpInfo" href="#">
+                            <img src="images/unknownUserProfile.png"><br />
+                            김이름<br />
+                            2019112070
+                        </a>
+                        <div class="countType">스크랩 수:</div>
+                        <div class="countValue">1919191919</div>
+                        <img class="amazing" src="images/amazing.png">
+                    </div>
+                </li>
+                <li>
+                    <div id="comment-most">
+                        <img class="bono" src="images/bonobono.png">
+                        <div class="mvpType">(경)댓글 상(축)</div>
+                        <a class="mvpInfo" href="#">
+                            <img src="images/unknownUserProfile.png"><br />
+                            김이름<br />
+                            2019112070
+                        </a>
+                        <div class="countType">댓글 수:</div>
+                        <div class="countValue">1919191919</div>
+                        <img class="amazing" src="images/amazing.png">
+                    </div>
+                </li>
+            </ul>
+            <div id="pagination-wrap">
+                <ul>
+                </ul>
+            </div>
+        </div>
+        <div id="quickMenu">
+            <a href="#">
+                <img src="images/e-class.png">
+                <span>e-class</span>
+            </a>
+            <a href="#">
+                <img src="images/lib.png">
+                <span>중앙<br />도서관</span>
+            </a>
+            <a href="#">
+                <img src="images/udrims.png">
+                <span>udrims</span>
+            </a>
+            <a href="#">
+                <img src="images/udrimserror.png">
+                <span>udrims<br />에러 조치</span>
+            </a>
+            <a href="#">
+                <img src="images/webmail.png">
+                <span>web mail</span>
+            </a>
+            <a href="#">
+                <img src="images/mdrims.png">
+                <span>mdrims</span>
+            </a>
+        </div>
+    </aside>
+    <footer>
+        <address>
+            <ul>
+                <li><a href="/page/serviceagreement">이용약관</a></li>
+                <li class="privacy"><a href="/page/privacy">개인정보처리방침</a></li>
+                <li><a href="/page/faq">문의하기</a></li>
+                <li class="copyright"><a href="/">© CSE-Only Community</a></li>
+            </ul>
+        </address>
+    </footer>
+</body>
+
+</html>

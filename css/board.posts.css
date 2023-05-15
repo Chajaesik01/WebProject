@@ -1,0 +1,282 @@
+main {
+    position: absolute;
+    left: 480px;
+    width: 1060px;
+    height: 100%;
+    padding: 30px;
+}
+
+aside {
+    position: absolute;
+    left: 1600px;
+}
+
+.boardWrap {
+    position: relative;
+    overflow: auto;
+    width: 1000px;
+    height: 865px;
+    margin: 30px;
+    background-color: rgb(250, 202, 76);
+}
+
+.boardTitle {
+    position: relative;
+    width: 940px;
+    margin: 30px;
+    font-size: 18px;
+    border: color black;
+    border-radius: 1;
+}
+
+.boardTitle>a:hover {
+    text-decoration: underline black 3px;
+}
+
+div.boardTitle p {
+    margin: 20px 0px;
+    font-size: 18px;
+}
+
+div.boardContent {
+    position: relative;
+    top: 30px;
+}
+
+div.boardContent>div.postList {
+    text-align: center;
+}
+
+.headRow {
+    font-weight: bold;
+}
+
+.postList .postNum {
+    display: inline-block;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    width: 10%;
+}
+
+.postList .title {
+    display: inline-block;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    width: 50%;
+    text-align: left;
+}
+
+.postList .author {
+    display: inline-block;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    width: 10%;
+}
+
+.postList .date {
+    display: inline-block;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    width: 10%;
+}
+
+.postList .view {
+    display: inline-block;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    width: 10%;
+}
+
+.postList>div:first-child {
+    width: 100%;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+.postList>div {
+    width: 100%;
+    border-bottom: 2px solid #000;
+}
+
+div.postRow>.title {
+    text-decoration: none;
+    color: black;
+}
+
+div.postRow>.title:hover {
+    text-decoration: underline black;
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropDown>.nameButton:hover {
+    text-decoration: underline black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dropContentBg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    background-color: transparent;
+    z-index: 997;
+}
+
+.dropContent {
+    position: absolute;
+    display: none;
+    z-index: 998;
+    width: 200px;
+}
+
+.dropContent>.dropDownInfo>img {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-color: #393939;
+    z-index: 2;
+}
+
+.dropContent * {
+    display: block;
+    font-size: 18px;
+    background-color: #393939;
+    color: rgb(193, 193, 193);
+    padding: 10px 0px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.dropContent>.openReport {
+    cursor: pointer;
+}
+
+.modalBackground {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+.modalWrap {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -25%);
+    width: 350px;
+    height: 460px;
+    background: white;
+    z-index: 1000;
+}
+
+.modalWrap>p {
+    margin: 20px 0px;
+    font-size: 30px;
+}
+
+.modalWrap>form>label {
+    display: block;
+    font-size: 20px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.modalWrap>form>input[type="text"] {
+    padding: 10px 5px;
+    border: 1px rgb(193, 193, 193) solid;
+    color: #393939;
+}
+
+.modalWrap>.closeReport {
+    padding: 10px 30px;
+    border: 0px;
+    background-color: #393939;
+    color: rgb(193, 193, 193);
+}
+
+.modalWrap>form>input {
+    margin: 20px auto;
+}
+
+.searchBar {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.searchBar>form>input {
+    padding: 10px 8px;
+    font-size: 18px;
+    background-color: #393939;
+    color: rgb(193, 193, 193);
+    border: 0px;
+}
+
+.searchBar>form>input:last-child {
+    padding: 10px 18px;
+}
+
+.searchBar>form>input:last-child:hover {
+    text-decoration: underline #C1C1C1;
+}
+
+.pageButton {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.pageButton a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    padding-top: 8px;
+    padding-right: 2px;
+    padding-left: 2px;
+    vertical-align: middle;
+    border: 0px;
+    color: rgb(193, 193, 193);
+    background-color: #393939;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.pageButton a:hover {
+    text-decoration: underline rgb(193, 193, 193);
+}
+
+.pageButton a.num.selected {
+    background-color: rgb(193, 193, 193);
+    color: black;
+    text-decoration-color: black;
+}
+
+.buttonWrap {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.buttonWrap a {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 0px;
+    background-color: #393939;
+    color: rgb(193, 193, 193);
+    font-size: 28px;
+}

@@ -1,0 +1,103 @@
+.dropDown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropDown>.nameButton:hover {
+    text-decoration: underline black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dropContentBg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    background-color: transparent;
+    z-index: 997;
+}
+
+.dropContent {
+    position: absolute;
+    display: none;
+    z-index: 998;
+    width: 200px;
+}
+
+.dropContent>.dropDownInfo>img {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-color: #393939;
+    z-index: 2;
+}
+
+.dropContent * {
+    display: block;
+    font-size: 18px;
+    background-color: #393939;
+    color: rgb(193, 193, 193);
+    padding: 10px 0px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.dropContent>.openReport {
+    cursor: pointer;
+}
+
+.modalBackground {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+.modalWrap {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -25%);
+    width: 350px;
+    height: 460px;
+    background: white;
+    z-index: 1000;
+}
+
+.modalWrap>p {
+    margin: 20px 0px;
+    font-size: 30px;
+}
+
+.modalWrap>form>label {
+    display: block;
+    font-size: 20px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.modalWrap>form>input[type="text"] {
+    padding: 10px 5px;
+    border: 1px rgb(193, 193, 193) solid;
+    color: #393939;
+}
+
+.modalWrap>.closeReport {
+    padding: 10px 30px;
+    border: 0px;
+    background-color: #393939;
+    color: rgb(193, 193, 193);
+}
+
+.modalWrap>form>input {
+    margin: 20px auto;
+}

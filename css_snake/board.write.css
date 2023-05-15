@@ -1,0 +1,89 @@
+main {
+    position: absolute;
+    left: 480px;
+    width: 1060px;
+    height: 100%;
+    padding: 30px;
+}
+
+aside {
+    position: absolute;
+    left: 1600px;
+}
+
+.board_wrap {
+    position: relative;
+    overflow: auto;
+    width: 1000px;
+    height: 865px;
+    margin: 30px;
+    background-color: rgb(250, 202, 76);
+}
+
+.board_title {
+    position: relative;
+    width: 940px;
+    margin: 30px;
+    font-size: 18px;
+    border: color black;
+    border-radius: 1;
+}
+
+.board_title>a:hover {
+    text-decoration: underline black 3px;
+}
+
+div.board_title p {
+    margin: 20px 0px;
+    font-size: 18px;
+}
+
+
+div.board_content {
+    width: 100%;
+    font-weight: bold;
+}
+
+div.board_content>form {
+    font-size: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+
+div.board_content>form>div {
+    padding: 10px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+div.board_content>form>.title>span,
+div.board_content>form>.content>span {
+    font-size: 24px;
+}
+
+div.board_content>form>.write_title {
+    border: 0px;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+}
+
+div.board_content>form>.write_content {
+    border: 0px;
+    border-bottom: 2px solid #000;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+}
+
+div.board_content>form>label {
+    display: inline-block;
+    width: 10%;
+    margin: 20px 0px;
+}
+
+div.board_content>form>#select_file {
+    display: inline-block;
+    width: 90%;
+    margin: 20px 0px;
+}
